@@ -51,6 +51,10 @@ public class Main {
             System.out.println(r);
         }
 
+        String[] products = new String[5];
+        for(String product:products){
+
+        }
 
     }
 }

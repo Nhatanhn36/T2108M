@@ -36,12 +36,12 @@ public class Main {
         fr2.inverseFraction();
 
         //plus 2 fraction
-        fr3 = fr3.plus(fr1, fr2);
+        fr3 = fr3.add(fr1, fr2);
         System.out.println("Tong 2 phan so: ");
         fr3.simplifyFraction();
 
         //minus 2 fraction
-        fr3 = fr3.minus(fr1, fr2);
+        fr3 = fr3.sub(fr1, fr2);
         System.out.println("Hieu 2 phan so: ");
         fr3.simplifyFraction();
 

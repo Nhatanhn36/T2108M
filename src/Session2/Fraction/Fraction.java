@@ -47,7 +47,7 @@ public class Fraction {
         }
     }
     //Ham cong 2 phan so
-    public Fraction plus(Fraction fr1, Fraction fr2) {
+    public Fraction add(Fraction fr1, Fraction fr2) {
         Fraction fr3 = new Fraction();
         if (denominator != denominator){
             fr3.numerator = fr1.numerator + fr2.numerator;
@@ -58,7 +58,7 @@ public class Fraction {
         return fr3;
     }
     //Ham tru 2 phan so
-    public Fraction minus(Fraction fr1, Fraction fr2){
+    public Fraction sub(Fraction fr1, Fraction fr2){
         Fraction fr3 = new Fraction();
         if (denominator != denominator){
             fr3.numerator = fr1.numerator - fr2.numerator;

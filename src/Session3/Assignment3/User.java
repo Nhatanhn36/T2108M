@@ -5,7 +5,8 @@ public class User {
     public String email;
     public String soDT;
     public int tuoi;
-    public String soTien;
+    public Double soTien;
+    Room room;
 
     public String getTen() {
         return ten;
@@ -39,12 +40,20 @@ public class User {
         this.tuoi = tuoi;
     }
 
-    public String getSoTien() {
+    public Double getSoTien() {
         return soTien;
     }
 
-    public void setSoTien(String soTien) {
+    public void setSoTien(Double soTien) {
         this.soTien = soTien;
+    }
+    public void checkSoTien(){
+        Double giaThue = this.room.giaThue;
+        if(soTien > giaThue){
+            System.out.println("Người dùng " + ten + " đủ tiền để thuê phòng");
+        }else{
+            System.out.println("Người dùng " + ten + " không đủ tiền để thuê phòng");
+        }
     }
 
 

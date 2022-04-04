@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.ListController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="599.0" prefWidth="798.0">
+         <children>
+            <Text layoutX="336.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Person List" textAlignment="CENTER" wrappingWidth="125.6708984375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="614.0" layoutY="12.0" mnemonicParsing="false" onAction="#formScreen" prefHeight="31.0" prefWidth="146.0" text="Add person" />
+            <TableView fx:id="tbView" layoutX="9.0" layoutY="71.0" prefHeight="527.0" prefWidth="765.0">
+              <columns>
+                <TableColumn fx:id="cName" prefWidth="373.0" text="Name" />
+                <TableColumn fx:id="cEmail" minWidth="0.0" prefWidth="302.0" text="Email" />
+                  <TableColumn fx:id="cAge" prefWidth="89.0" text="Age" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

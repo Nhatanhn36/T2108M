@@ -23,9 +23,10 @@ public class QuanLyHangHoa {
              soLuongSP.setText("");
 
              errMsg.setVisible(false);
+             thongTin.setVisible(true);
         }catch (Exception e){
             errMsg.setVisible(true);
-            errMsg.setText(e.getMessage());
+            errMsg.setText("Chưa nhập thông tin sản phẩm!");
         }
     }
 }

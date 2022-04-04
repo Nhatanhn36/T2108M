@@ -12,7 +12,7 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Text>
-      <TextArea fx:id="thongTin" layoutX="586.0" layoutY="106.0" prefHeight="561.0" prefWidth="508.0" />
+      <TextArea fx:id="thongTin" layoutX="586.0" layoutY="106.0" prefHeight="561.0" prefWidth="508.0" visible="false" editable="false"/>
       <TextField fx:id="tenSP" layoutX="72.0" layoutY="106.0" prefHeight="52.0" prefWidth="372.0" promptText="Tên Sản phẩm" />
       <TextField fx:id="giaSP" layoutX="72.0" layoutY="201.0" prefHeight="52.0" prefWidth="372.0" promptText="Giá" />
       <TextField fx:id="donVi" layoutX="72.0" layoutY="301.0" prefHeight="52.0" prefWidth="372.0" promptText="Đơn vị" />

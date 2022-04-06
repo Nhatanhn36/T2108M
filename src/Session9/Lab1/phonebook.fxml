@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Session9.Lab1.PhonebookController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="699.0" prefWidth="990.0">
+         <children>
+            <TableView fx:id="tbView" layoutX="9.0" layoutY="144.0" prefHeight="548.0" prefWidth="964.0">
+              <columns>
+                <TableColumn fx:id="cName" prefWidth="254.0" text="Name" />
+                <TableColumn fx:id="cPhoneNumber" prefWidth="433.0" text="Phone Number" />
+                  <TableColumn fx:id="cEdit" prefWidth="141.0" text="Edit" />
+                  <TableColumn fx:id="cDelete" prefWidth="135.0" text="Delete" />
+              </columns>
+            </TableView>
+            <Text layoutX="389.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneBook" textAlignment="CENTER" wrappingWidth="213.0">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch" layoutX="9.0" layoutY="113.0" promptText="Search by name" />
+            <Button onAction="#formScreen" layoutX="837.0" layoutY="113.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="136.0" text="Add contact" />
+            <Button onAction="#search" layoutX="196.0" layoutY="113.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="Search" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

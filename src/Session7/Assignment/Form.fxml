@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:controller="Session7.Assignment.QuanLyHangHoa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Session7.Assignment.QuanLyHangHoa">
    <children>
-      <Text layoutX="627.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh Sách Sản Phẩm " textAlignment="CENTER" wrappingWidth="426.6708984375">
-         <font>
-            <Font name="System Bold" size="25.0" />
-         </font>
-      </Text>
-      <TextArea fx:id="thongTin" layoutX="586.0" layoutY="106.0" prefHeight="561.0" prefWidth="508.0" visible="false" editable="false"/>
-      <TextField fx:id="tenSP" layoutX="72.0" layoutY="106.0" prefHeight="52.0" prefWidth="372.0" promptText="Tên Sản phẩm" />
-      <TextField fx:id="giaSP" layoutX="72.0" layoutY="201.0" prefHeight="52.0" prefWidth="372.0" promptText="Giá" />
-      <TextField fx:id="donVi" layoutX="72.0" layoutY="301.0" prefHeight="52.0" prefWidth="372.0" promptText="Đơn vị" />
-      <TextField fx:id="soLuongSP" layoutX="72.0" layoutY="400.0" prefHeight="52.0" prefWidth="372.0" promptText="Số lượng" />
-      <Button onAction="#submit" layoutX="186.0" layoutY="509.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="145.0" text="Thêm sản phẩm">
+      <TextField fx:id="tenSP" layoutX="415.0" layoutY="129.0" prefHeight="52.0" prefWidth="372.0" promptText="Tên Sản phẩm" />
+      <TextField fx:id="giaSP" layoutX="414.0" layoutY="234.0" prefHeight="52.0" prefWidth="372.0" promptText="Giá" />
+      <TextField fx:id="donVi" layoutX="414.0" layoutY="336.0" prefHeight="52.0" prefWidth="372.0" promptText="Đơn vị" />
+      <TextField fx:id="soLuongSP" layoutX="415.0" layoutY="438.0" prefHeight="52.0" prefWidth="372.0" promptText="Số lượng" />
+      <Button layoutX="528.0" layoutY="568.0" mnemonicParsing="false" onAction="#submit" prefHeight="52.0" prefWidth="145.0" text="Thêm sản phẩm">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Text fx:id="errMsg" fill="RED" layoutX="162.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error" visible="false" wrappingWidth="192.021484375" />
+      <Text fx:id="errMsg" fill="RED" layoutX="484.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error" visible="false" wrappingWidth="234.6708984375" />
+      <Text layoutX="483.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập sản phẩm" textAlignment="CENTER" wrappingWidth="234.6708984375">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
    </children>
 </Pane>

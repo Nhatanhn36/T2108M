@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Session7.Assignment.QuanLyList">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1195.0">
+         <children>
+            <TableView fx:id="tbView" layoutX="14.0" layoutY="106.0" prefHeight="680.0" prefWidth="1151.0">
+              <columns>
+                <TableColumn fx:id="cTenSP" prefWidth="455.0" text="Tên sản phẩm" />
+                <TableColumn fx:id="cGiaSP" prefWidth="285.0" text="Giá" />
+                  <TableColumn fx:id="cDonVi" prefWidth="215.0" text="Đơn vị" />
+                  <TableColumn fx:id="cSoLuongSP" prefWidth="105.0" text="Số lượng" />
+                  <TableColumn fx:id="cDelete" prefWidth="90.0" text="Delete" />
+              </columns>
+            </TableView>
+            <Text layoutX="471.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách sản phẩm" wrappingWidth="253.6708984375">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Button layoutX="1026.0" layoutY="65.0" mnemonicParsing="false" onAction="#formScreen" prefHeight="41.0" prefWidth="139.0" text="Thêm Sản phẩm" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

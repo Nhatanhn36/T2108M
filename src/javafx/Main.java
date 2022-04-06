@@ -28,6 +28,9 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         personList.add(new Person("Nguyễn Nhật Anh","nhatanhn36@gmail.com",18));
+        personList.add(new Person("Đỗ Hoàng Anh","hoanganh@gmail.com",18));
+        personList.add(new Person("Nguyễn Hoài Nam","namHoai04@gmail.com",18));
+        personList.add(new Person("Phạm Phương Linh","phuongLinh06@gmail.com",18));
         launch(args);
     }
 }

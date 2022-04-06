@@ -12,6 +12,15 @@ public class DemoController {
     public TextField email;
     public TextField age;
     public Text errMsg;
+    public Person person;
+
+    public void setData(Person person){
+        this.person = person;
+
+        fullName.setText(person.getFullName());
+        email.setText(person.getEmail());
+        age.setText(person.getAge().toString());
+    }
 
     public void submit() {
 //            String s = "\n---------------";
@@ -21,7 +30,13 @@ public class DemoController {
         try {
             Person p = new Person(fullName.getText(), email.getText(), Integer.parseInt(age.getText()));
 
-            Main.personList.add(p);
+            if(this.person == null){
+                Main.personList.add(p);
+            }else{
+                int i = Main.personList.indexOf(this.person);
+                Main.personList.set(i,p);
+            }
+//            Main.personList.add(p);
 //            renderList();
             Parent root = FXMLLoader.load(getClass().getResource("list.fxml"));
             Main.rootStage.setScene(new Scene(root,800,600));

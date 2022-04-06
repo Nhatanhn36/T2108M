@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: javafx.Main
+Main-Class: Session7.Assignment.Main
 

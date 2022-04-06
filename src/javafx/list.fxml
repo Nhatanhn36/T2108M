@@ -15,13 +15,17 @@
                </font>
             </Text>
             <Button layoutX="614.0" layoutY="12.0" mnemonicParsing="false" onAction="#formScreen" prefHeight="31.0" prefWidth="146.0" text="Add person" />
-            <TableView fx:id="tbView" layoutX="9.0" layoutY="71.0" prefHeight="527.0" prefWidth="765.0">
+            <TableView fx:id="tbView" layoutX="9.0" layoutY="100.0" prefHeight="498.0" prefWidth="765.0">
               <columns>
-                <TableColumn fx:id="cName" prefWidth="373.0" text="Name" />
-                <TableColumn fx:id="cEmail" minWidth="0.0" prefWidth="302.0" text="Email" />
-                  <TableColumn fx:id="cAge" prefWidth="89.0" text="Age" />
+                <TableColumn fx:id="cName" prefWidth="291.0" text="Name" />
+                <TableColumn fx:id="cEmail" minWidth="0.0" prefWidth="241.0" text="Email" />
+                  <TableColumn fx:id="cAge" prefWidth="71.0" text="Age" />
+                  <TableColumn fx:id="cEdit" prefWidth="82.0" text="Edit" />
+                  <TableColumn fx:id="cDelete" prefWidth="79.0" text="Delete" />
               </columns>
             </TableView>
+            <TextField fx:id="txtSearch" layoutX="9.0" layoutY="69.0" prefHeight="31.0" prefWidth="213.0" promptText="Search by name" />
+            <Button onAction="#search" layoutX="222.0" layoutY="69.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="79.0" text="Search" />
          </children></AnchorPane>
   </content>
 </ScrollPane>

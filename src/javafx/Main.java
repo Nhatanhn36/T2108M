@@ -8,9 +8,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class Main extends Application {
+
+    public final static String connectionString = "jdbc:mysql://localhost:3306/t2108m";
+    public final static String user = "root";
+    public final static String password = "";
 
     public static ObservableList<Person> personList = FXCollections.observableArrayList();
 
@@ -31,6 +39,23 @@ public class Main extends Application {
         personList.add(new Person("Đỗ Hoàng Anh","hoanganh@gmail.com",18));
         personList.add(new Person("Nguyễn Hoài Nam","namHoai04@gmail.com",18));
         personList.add(new Person("Phạm Phương Linh","phuongLinh06@gmail.com",18));
+
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conn = DriverManager.getConnection(connectionString, user, password);
+            Statement stt = conn.createStatement();
+
+            String txt_sql = "select * from person";
+            ResultSet rs = stt.executeQuery(txt_sql);
+            while(rs.next()){
+                personList.add(new Person(rs.getString("fullName"), rs.getString("email"), rs.getInt("age")));
+
+            }
+
+        }catch (Exception e){
+            System.out.println("Error..");
+        }
         launch(args);
     }
 }

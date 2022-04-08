@@ -3,6 +3,7 @@ package Session9.Lab1;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
@@ -10,7 +11,7 @@ import javafx.scene.text.Text;
 
 public class ContactControlller {
     public TextField name;
-    public TextField phoneNumber;
+    public TextArea phoneNumber;
     public Text result;
     public Text errMsg;
     public Contact contact;

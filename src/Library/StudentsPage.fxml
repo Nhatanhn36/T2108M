@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:controller="Library.StudentController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="690.0" prefWidth="980.0">
+         <children>
+            <TableView fx:id="tbStudents" layoutX="14.0" layoutY="124.0" prefHeight="561.0" prefWidth="953.0">
+              <columns>
+                <TableColumn fx:id="sName" prefWidth="175.0" text="Student Name" />
+                <TableColumn fx:id="sBirthday" prefWidth="135.0" text="Date Of Birth" />
+                  <TableColumn fx:id="sAddress" prefWidth="186.0" text="Address" />
+                  <TableColumn fx:id="sEmail" prefWidth="209.0" text="Email" />
+                  <TableColumn fx:id="sPhoneNumber" prefWidth="155.0" text="Phone Number" />
+                  <TableColumn fx:id="sAction" prefWidth="92.0" text="Action" />
+              </columns>
+            </TableView>
+            <Button onAction="#addStudent" layoutX="718.0" layoutY="50.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="248.0" text="Add a Student">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button onAction="#backHome" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="175.0" text="&lt;&lt; Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

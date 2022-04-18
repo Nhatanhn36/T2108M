@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="Library.StudentFormController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="278.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Student" wrappingWidth="244.98046875">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="sName" layoutX="91.0" layoutY="175.0" prefHeight="48.0" prefWidth="245.0" promptText="Name" />
+      <TextField fx:id="sEmail" layoutX="464.0" layoutY="175.0" prefHeight="48.0" prefWidth="245.0" promptText="Email" />
+      <TextField fx:id="sPhoneNumber" layoutX="91.0" layoutY="279.0" prefHeight="48.0" prefWidth="245.0" promptText="Phone Number" />
+      <TextField fx:id="sBirthday" layoutX="464.0" layoutY="279.0" prefHeight="48.0" prefWidth="245.0" promptText="Date Of Birth" />
+      <TextArea fx:id="sAddress" layoutX="91.0" layoutY="373.0" prefHeight="171.0" prefWidth="620.0" promptText="Address" />
+      <Button onAction="#cancel" layoutX="91.0" layoutY="597.0" mnemonicParsing="false" text="&lt;&lt; Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button onAction="#submit" layoutX="638.0" layoutY="597.0" mnemonicParsing="false" text="Submit">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
